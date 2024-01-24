@@ -1,5 +1,7 @@
 <template>
-	<div><v-btn>đá</v-btn></div>
+	<div class="h-[5000px]">
+		<app-header />
+	</div>
 </template>
 
 <script setup></script>

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
 	build: {
 		transpile: ['vuetify'],
 	},
+	css: ['~/assets/styles/main.css'],
 	modules: [
 		(_options, nuxt) => {
 			nuxt.hooks.hook('vite:extendConfig', (config) => {
@@ -20,6 +21,17 @@ export default defineNuxtConfig({
 			template: {
 				transformAssetUrls,
 			},
+		},
+		server: {
+			hmr: {
+				// overlay: false,
+			},
+		},
+	},
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {},
 		},
 	},
 })

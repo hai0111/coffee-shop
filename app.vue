@@ -1,9 +1,7 @@
 <template>
-	<div>
+	<v-app :full-height="true">
 		<NuxtLayout>
-			<v-app>
-				<NuxtPage />
-			</v-app>
+			<NuxtPage />
 		</NuxtLayout>
-	</div>
+	</v-app>
 </template>
