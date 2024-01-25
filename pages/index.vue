@@ -1,5 +1,5 @@
 <template>
-	<div class="h-[5000px]">
+	<div class="">
 		<app-header />
 	</div>
 </template>

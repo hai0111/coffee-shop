@@ -1,0 +1,52 @@
+<template>
+	<div>
+		<svg
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
+			:height="size"
+			:width="size"
+			@click="onclick"
+			:class="{
+				'cursor-pointer': isOnClickExist,
+				'text-red-600': true,
+			}"
+		>
+			<path
+				d="M1.4720451262 13.356970375A9.063 9.063 0 1 0 18.154024235 6.267298379a9.063 9.063 0 1 0 -16.6819791088 7.089671996Z"
+				fill="none"
+				:stroke="color"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="1.5"
+			></path>
+			<path
+				d="m16.221 16.22 7.029 7.03"
+				fill="none"
+				:stroke="color"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="1.5"
+			></path>
+		</svg>
+	</div>
+</template>
+
+<script lang="ts" setup>
+import type { IconProps } from './types'
+
+const props = withDefaults(defineProps<IconProps>(), {
+	color: '#000000',
+	size: 24,
+})
+
+const emit = defineEmits<{ (e: 'click'): void }>()
+
+const isOnClickExist = computed(
+	() => !!getCurrentInstance()?.vnode.props?.onClick
+)
+
+const onclick = () => {
+	if (props.href) useRouter().push(props.href)
+	emit('click')
+}
+</script>
