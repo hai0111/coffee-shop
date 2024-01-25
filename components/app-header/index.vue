@@ -1,6 +1,8 @@
 <template>
 	<div class="flex items-center justify-between">
-		<img src="/images/main-logo.png" class="size-16" />
+		<NuxtLink href="/">
+			<img src="/images/main-logo.png" class="size-16" />
+		</NuxtLink>
 
 		<div class="flex items-center gap-6 text-lg">
 			<NuxtLink
