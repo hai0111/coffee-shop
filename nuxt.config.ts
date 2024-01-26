@@ -20,6 +20,7 @@ export default defineNuxtConfig({
 		},
 	},
 	modules: [
+		'@pinia/nuxt',
 		'@vueuse/motion/nuxt',
 		(_options, nuxt) => {
 			nuxt.hooks.hook('vite:extendConfig', (config) => {

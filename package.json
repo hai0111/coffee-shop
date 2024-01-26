@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
-    "@vueuse/motion": "^2.0.0"
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/motion": "^2.0.0",
+    "pinia": "^2.1.7"
   }
 }
