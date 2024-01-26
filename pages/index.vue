@@ -1,7 +1,5 @@
 <template>
-	<div class="">
-		<app-header />
-	</div>
+	<div class="h-[500vh]"></div>
 </template>
 
 <script setup lang="ts">
