@@ -3,6 +3,8 @@
 		<div class="ma-n4 rounded-t-xl overflow-hidden">
 			<home-hero />
 		</div>
+
+		<home-booking />
 	</div>
 </template>
 
