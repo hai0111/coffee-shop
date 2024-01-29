@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 	},
 	devtools: { enabled: true },
 	build: {
-		transpile: ['vuetify'],
+		transpile: ['vuetify', '@vuepic/vue-datepicker'],
 	},
 	css: ['~/assets/styles/main.css'],
 	postcss: {
