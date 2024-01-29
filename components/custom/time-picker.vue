@@ -1,9 +1,9 @@
 <template>
 	<VueDatePicker
-		:model-value="date"
+		:model-value="time"
 		@update:model-value="updateModelValue"
 		auto-apply
-		:disabled-dates="disabledDates"
+		time-picker
 		@open="focused = true"
 		@closed="focused = false"
 	>
@@ -25,10 +25,9 @@
 
 <script lang="ts">
 import VueDatePicker from '@vuepic/vue-datepicker'
-import moment from 'moment'
 import { defineComponent } from 'vue'
 import { VTextField } from 'vuetify/lib/components/index.mjs'
-import { dateFormat } from '~/assets/constants'
+import { paddingNumber } from '~/utilities'
 
 export default defineComponent({
 	extends: VTextField,
@@ -41,18 +40,28 @@ export default defineComponent({
 	},
 	setup(props, { emit }) {
 		const updateModelValue = (val: any) => {
-			if (val) val = moment(val).format(dateFormat)
+			if (val)
+				val = Object.values(val)
+					.slice(0, 2)
+					.map((num) => paddingNumber(num as number))
+					.join(':')
 			emit('update:modelValue', val)
 		}
 
-		const date = computed(() =>
-			props.modelValue ? moment(props.modelValue, dateFormat).toDate() : null
-		)
+		const time = computed<any>(() => {
+			let hours = null,
+				minutes = null
 
-		const disabledDates = (date: Date) => moment(date).isSameOrBefore(moment())
+			if (props.modelValue) {
+				const [h, m] = props.modelValue.split(':')
+				hours = Number(h)
+				minutes = Number(m)
+			}
+			return { hours, minutes }
+		})
 
 		const focused = ref(false)
-		return { date, focused, disabledDates, updateModelValue }
+		return { time, focused, updateModelValue }
 	},
 })
 </script>

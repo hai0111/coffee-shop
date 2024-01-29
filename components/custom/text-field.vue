@@ -1,6 +1,6 @@
 <template>
 	<VTextField
-		v-bind="{ ...props, type }"
+		v-bind="{ ...$props, type }"
 		@input="updateModelValue($event.target)"
 	/>
 </template>
@@ -46,7 +46,7 @@ export default defineComponent({
 			emit('update:modelValue', val)
 		}
 
-		return { props, type, updateModelValue }
+		return { type, updateModelValue }
 	},
 })
 </script>

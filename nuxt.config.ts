@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 	build: {
 		transpile: ['vuetify', '@vuepic/vue-datepicker'],
 	},
-	css: ['~/assets/styles/main.css'],
+	css: ['~/assets/styles/main.css', '@vuepic/vue-datepicker/dist/main.css'],
 	postcss: {
 		plugins: {
 			tailwindcss: {},
