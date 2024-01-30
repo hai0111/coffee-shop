@@ -5,6 +5,8 @@
 		</div>
 
 		<home-booking />
+		<home-pinned-posts />
+		<home-menu />
 	</div>
 </template>
 

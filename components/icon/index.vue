@@ -38,6 +38,7 @@ const onclick = () => {
 
 <style scoped lang="scss">
 .icon {
+	display: inline-block;
 	background-color: var(--color-stroke) !important;
 	mask: var(--src) !important;
 	width: var(--size);
