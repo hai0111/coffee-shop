@@ -6,7 +6,9 @@
 			v-bind="item"
 		>
 			<template #title>
-				<span class="italic font-serif text-5xl"> 0{{ index + 1 }} </span>.
+				<span class="italic font-serif text-5xl font-light">
+					0{{ index + 1 }} </span
+				>.
 				{{ item.title }}
 			</template>
 		</post-item-col>
@@ -21,7 +23,7 @@ const pinnedPosts: Post[] = [
 		subContent:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate delectus, commodi nostrum sit sapiente, iure saepe quidem cum at enim, eveniet officiis!',
 		thumbnail: '/images/hero-1.jpg',
-		title: 'BEAUTIFUL PLACE',
+		title: 'FEEL THE COFFEE',
 	},
 	{
 		subContent:
@@ -33,7 +35,7 @@ const pinnedPosts: Post[] = [
 		subContent:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate delectus, commodi nostrum sit sapiente, iure saepe quidem cum at enim, eveniet officiis!',
 		thumbnail: '/images/hero-3.jpg',
-		title: 'BEAUTIFUL PLACE',
+		title: 'FULL TASTE',
 	},
 ]
 </script>

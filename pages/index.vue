@@ -7,6 +7,7 @@
 		<home-booking />
 		<home-pinned-posts />
 		<home-menu />
+		<home-products />
 	</div>
 </template>
 

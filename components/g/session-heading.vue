@@ -1,6 +1,6 @@
 <template>
 	<div class="text-center">
-		<div class="font-serif font-light italic tracking-widest text-lg">
+		<div class="font-serif font-light italic tracking-widest text-xl">
 			{{ subTitle }}
 		</div>
 		<div class="mt-4 text-4xl font-sans uppercase font-bold">
