@@ -1,5 +1,5 @@
 <template>
-	<div class="h-[500vh]">
+	<div>
 		<div class="ma-n4 rounded-t-xl overflow-hidden">
 			<home-hero />
 		</div>
@@ -8,6 +8,7 @@
 		<home-pinned-posts />
 		<home-menu />
 		<home-products />
+		<home-images-deco />
 	</div>
 </template>
 
