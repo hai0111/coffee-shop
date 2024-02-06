@@ -7,3 +7,6 @@ export const paddingNumber = (
 	if (zerosAdded > 0) num = Array(zerosAdded).fill(0).join('') + num
 	return num
 }
+
+export const convertSize = (val: string | number) =>
+	typeof val === 'string' ? val : val + 'px'

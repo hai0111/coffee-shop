@@ -16,6 +16,7 @@ export default defineNuxtConfig({
 		'~/assets/styles/main.css',
 		'@vuepic/vue-datepicker/dist/main.css',
 		'@fancyapps/ui/dist/fancybox/fancybox.css',
+		'@splidejs/vue-splide/css',
 	],
 	postcss: {
 		plugins: {

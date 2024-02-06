@@ -27,6 +27,8 @@
 		"@fancyapps/ui": "^5.0.33",
 		"@mdi/font": "^7.4.47",
 		"@pinia/nuxt": "^0.5.1",
+		"@splidejs/splide-extension-auto-scroll": "^0.5.3",
+		"@splidejs/vue-splide": "^0.6.12",
 		"@vuepic/vue-datepicker": "^7.4.1",
 		"@vueuse/motion": "^2.0.0",
 		"isotope-layout": "^3.0.6",
