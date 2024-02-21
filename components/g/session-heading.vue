@@ -1,5 +1,5 @@
 <template>
-	<div class="text-center 1">
+	<div class="text-center">
 		<div class="font-serif font-light italic tracking-widest text-xl">
 			{{ subTitle }}
 		</div>
